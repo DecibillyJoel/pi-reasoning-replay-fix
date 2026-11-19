@@ -1,3 +1,7 @@
 node_modules/
 *.log
 .DS_Store
+
+# Local planning documents stay out of the repo.
+docs/superpowers/
+docs/plans/
