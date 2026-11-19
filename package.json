@@ -1,0 +1,16 @@
+{
+  "name": "pi-reasoning-replay-fix",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Heals replayed reasoning-model tool-call turns that lack a reasoning item, so a poisoned session stops returning 400 missing_tool_call_reasoning.",
+  "type": "module",
+  "keywords": [
+    "pi-extension",
+    "pi-package",
+    "reasoning",
+    "openai-responses"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
