@@ -31,7 +31,7 @@ The extension is provider-agnostic. It acts on the request target, not on the mo
 ## Install
 
 ```sh
-pi install /home/joe/Projects/GitHub/pi-reasoning-replay-fix
+pi install git:github.com/DecibillyJoel/pi-reasoning-replay-fix
 ```
 
 pi loads `extensions/*.ts` from a package.
@@ -44,10 +44,11 @@ pi loads `extensions/*.ts` from a package.
 
 No build step. The file is a plain TypeScript source that pi loads directly.
 
-Typecheck against the installed pi types:
+Typecheck against the pi types that the dev dependencies install:
 
 ```sh
-node /home/joe/Projects/GitHub/pi-paster/node_modules/typescript/lib/tsc.js -p .
+npm install
+npm run typecheck
 ```
 
-The local `tsconfig.json` maps the pi package to the installed declaration file. Change that path when pi moves.
+`npm install` fetches the pi package that `tsconfig.json` needs to resolve the types.

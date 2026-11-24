@@ -7,12 +7,6 @@
     "noEmit": true,
     "skipLibCheck": true,
     "types": [],
-    "baseUrl": ".",
-    "paths": {
-      "@earendil-works/pi-coding-agent": [
-        "/home/joe/.local/lib/node_modules/@earendil-works/pi-coding-agent/dist/index.d.ts"
-      ]
-    },
     "ignoreDeprecations": "6.0"
   },
   "include": ["extensions/**/*.ts"]

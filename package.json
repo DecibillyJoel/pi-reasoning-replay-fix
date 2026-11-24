@@ -2,14 +2,22 @@
   "name": "pi-reasoning-replay-fix",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "Heals replayed reasoning-model tool-call turns that lack a reasoning item, so a poisoned session stops returning 400 missing_tool_call_reasoning.",
   "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
   "keywords": [
     "pi-extension",
     "pi-package",
     "reasoning",
     "openai-responses"
   ],
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.6.0",
+    "typescript": "^6.0.3"
+  },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
   }
